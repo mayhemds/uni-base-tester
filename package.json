@@ -1,6 +1,6 @@
 {
   "name": "uni-database-tester",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Universal database connection testing for any project - verify read/write/delete operations before app startup",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
