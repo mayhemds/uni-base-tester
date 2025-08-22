@@ -1,0 +1,105 @@
+{
+  "name": "uni-database-tester",
+  "version": "1.0.0",
+  "description": "Universal database connection testing for any project - verify read/write/delete operations before app startup",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "db-test": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "dev": "./scripts/dev.sh",
+    "publish": "./scripts/publish.sh",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "database",
+    "connection",
+    "testing",
+    "health-check",
+    "postgresql",
+    "mysql",
+    "mongodb",
+    "supabase",
+    "react",
+    "cli",
+    "typescript"
+  ],
+  "author": "Tyrone May",
+  "license": "MIT",
+  "files": [
+    "dist/",
+    "migrations/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.56.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.15.5",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "mongodb": "^6.18.0",
+    "mysql2": "^3.14.3",
+    "pg": "^8.16.3",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@supabase/supabase-js": "^2.0.0",
+    "mongodb": "^6.0.0",
+    "mysql2": "^3.6.0",
+    "pg": "^8.11.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "pg": {
+      "optional": true
+    },
+    "mysql2": {
+      "optional": true
+    },
+    "mongodb": {
+      "optional": true
+    },
+    "@supabase/supabase-js": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mayhemds/uni-database-tester.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mayehmds/uni-database-tester/issues"
+  },
+  "homepage": "https://github.com/mayhemds/uni-database-tester#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

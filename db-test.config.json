@@ -1,0 +1,12 @@
+{
+  "database": {
+    "type": "postgresql",
+    "connectionString": "${DATABASE_URL}",
+    "ssl": true
+  },
+  "tableName": "db_connection_test",
+  "autoCreateTable": true,
+  "cleanupAfterTest": true,
+  "timeoutMs": 30000,
+  "retryAttempts": 3
+}
