@@ -12,7 +12,7 @@ npm test
 npm run build
 
 # Version check
-echo "Current version: $(npm version --json | jq -r '.\"uni-database-tester\"')"
+echo "Current version: $(npm version --json | jq -r '."uni-database-tester"')"
 echo "Do you want to bump version? (patch/minor/major/skip)"
 read -r version_bump
 
